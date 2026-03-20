@@ -10,21 +10,20 @@ env/
 .venv/
 .env/
 
-# Data files
+# Raw data should not be uploaded
 data/raw/*
-data/processed/*
 
-# Model files
-models/*
-*.joblib
-*.pkl
+# Allow processed dataset for app deployment
+!data/processed/
+!data/processed/cleaned_disasters.csv
 
-# Generated reports
-reports/*.png
-reports/*.csv
-reports/*.txt
-reports/*.pdf
-reports/*.docx
+# Allow trained model files for app deployment
+!models/
+!models/best_model.joblib
+!models/label_encoder.joblib
+
+# Optional: ignore extra model files
+models/*.pkl
 
 # Jupyter
 .ipynb_checkpoints/

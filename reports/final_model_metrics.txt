@@ -1,0 +1,16 @@
+Final Model Evaluation
+============================================================
+Accuracy: 0.5662
+Macro F1-score: 0.5657
+Weighted F1-score: 0.5660
+
+Classification Report:
+               precision    recall  f1-score   support
+
+  High Impact       0.60      0.61      0.60      1202
+   Low Impact       0.59      0.58      0.59      1167
+Medium Impact       0.51      0.50      0.51      1167
+
+     accuracy                           0.57      3536
+    macro avg       0.57      0.57      0.57      3536
+ weighted avg       0.57      0.57      0.57      3536

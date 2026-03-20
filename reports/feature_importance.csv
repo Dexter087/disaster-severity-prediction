@@ -1,0 +1,328 @@
+feature,importance
+start_year,4475
+country_disaster_frequency,3034
+start_month,2835
+magnitude,2039
+end_year,2037
+disaster_type_frequency,648
+magnitude_missing,309
+region_Asia,303
+decade_2000s,295
+region_Americas,283
+magnitude_scale_Km2,282
+region_Europe,263
+region_Africa,261
+disaster_duration_years,260
+disaster_subgroup_Hydrological,252
+decade_1990s,245
+disaster_subgroup_Meteorological,242
+disaster_subtype_Flood (General),236
+disaster_subtype_Tropical cyclone,204
+decade_2010s,199
+disaster_subtype_Riverine flood,168
+disaster_type_Flood,149
+disaster_subtype_Storm (General),147
+country_United States of America,134
+country_China,133
+decade_1980s,123
+disaster_type_Storm,107
+country_New Zealand,103
+country_Indonesia,102
+disaster_subgroup_Biological,100
+country_Philippines,99
+disaster_subtype_Viral disease,98
+country_Viet Nam,98
+disaster_type_Drought,94
+disaster_subtype_Flash flood,93
+country_Brazil,91
+"country_China, Hong Kong Special Administrative Region",91
+region_Oceania,90
+country_India,85
+country_Sri Lanka,81
+country_Italy,81
+magnitude_scale_Unknown,79
+country_Japan,79
+country_Australia,78
+disaster_subtype_Tornado,74
+country_Afghanistan,72
+decade_2020s,71
+country_Ukraine,70
+disaster_type_Infestation,69
+disaster_type_Earthquake,68
+country_Haiti,65
+disaster_subtype_Wildfire (General),65
+country_Republic of Korea,65
+disaster_subtype_Heat wave,64
+disaster_subtype_Landslide (wet),63
+country_France,62
+disaster_subtype_Severe weather,60
+disaster_subtype_Mudslide,60
+country_Democratic Republic of the Congo,60
+disaster_type_Volcanic activity,60
+country_Türkiye,60
+country_Malaysia,60
+country_United Kingdom of Great Britain and Northern Ireland,59
+decade_1960s,58
+disaster_subtype_Avalanche (wet),58
+country_Pakistan,58
+country_Canada,57
+country_Romania,57
+country_Peru,56
+country_Niger,56
+country_Germany,56
+country_Thailand,56
+country_Bangladesh,54
+disaster_type_Mass movement (wet),54
+country_Vanuatu,54
+disaster_subtype_Lightning/Thunderstorms,54
+disaster_subgroup_Climatological,53
+country_South Africa,51
+country_Mexico,51
+country_Nigeria,51
+magnitude_scale_Vaccinated,51
+country_Fiji,50
+country_Spain,49
+country_Bosnia and Herzegovina,49
+disaster_subgroup_Geophysical,49
+country_Morocco,49
+country_Nicaragua,49
+disaster_subtype_Blizzard/Winter storm,48
+country_Russian Federation,47
+country_Madagascar,47
+country_Czechia,47
+country_Honduras,46
+disaster_subtype_Parasitic disease,46
+country_Central African Republic,46
+disaster_subtype_Extra-tropical storm,45
+disaster_subtype_Bacterial disease,45
+country_Puerto Rico,45
+country_Namibia,44
+country_Serbia,43
+disaster_subtype_Infectious disease (General),43
+decade_1970s,43
+country_Tonga,42
+country_Mozambique,42
+country_Saint Lucia,42
+country_Jamaica,42
+country_Croatia,41
+country_Burkina Faso,41
+country_Chile,41
+country_Mauritania,41
+country_El Salvador,40
+disaster_subtype_Hail,40
+country_Democratic People's Republic of Korea,40
+country_United Republic of Tanzania,40
+disaster_subtype_Severe winter conditions,40
+disaster_type_Wildfire,40
+disaster_type_Epidemic,40
+disaster_subtype_Ground movement,40
+country_Ethiopia,39
+country_Syrian Arab Republic,39
+country_Colombia,39
+country_Papua New Guinea,38
+country_Paraguay,38
+country_Kenya,38
+country_Argentina,37
+disaster_subtype_Ash fall,36
+decade_1940s,36
+country_Taiwan (Province of China),36
+country_Sudan,36
+disaster_subtype_Sand/Dust storm,35
+country_Côte d’Ivoire,35
+country_Mali,35
+country_Cuba,34
+country_Costa Rica,34
+country_Belgium,33
+country_Algeria,33
+country_Iran (Islamic Republic of),33
+country_Burundi,32
+country_Uruguay,31
+disaster_type_Extreme temperature,31
+country_Nepal,31
+"disaster_subtype_Land fire (Brush, Bush, Pasture)",31
+disaster_subtype_Forest fire,31
+country_North Macedonia,30
+country_Saudi Arabia,30
+country_Cambodia,29
+country_Poland,28
+country_Egypt,28
+country_Comoros,28
+country_Dominican Republic,27
+country_Georgia,27
+country_Kyrgyzstan,27
+country_Albania,26
+country_Guatemala,26
+country_Venezuela (Bolivarian Republic of),26
+country_Solomon Islands,26
+disaster_subtype_Tsunami,25
+magnitude_scale_Kph,24
+country_Greece,24
+country_Rwanda,23
+decade_1950s,23
+country_Myanmar,23
+country_Chad,23
+country_Zimbabwe,22
+country_Netherlands (Kingdom of the),22
+country_Austria,22
+country_Belize,22
+country_Slovakia,21
+decade_1930s,21
+country_Djibouti,21
+country_Switzerland,20
+country_Gambia,20
+country_Mongolia,19
+disaster_subtype_Drought,19
+country_Yemen,18
+country_Ghana,18
+country_Malawi,18
+country_Togo,18
+country_Panama,18
+disaster_subtype_Coastal flood,17
+country_Tajikistan,17
+country_Benin,17
+country_Botswana,17
+disaster_subtype_Cold wave,17
+country_South Sudan,17
+country_Guinea-Bissau,17
+country_Uganda,14
+country_Bulgaria,12
+country_Lao People's Democratic Republic,11
+country_Liberia,10
+country_Ireland,10
+country_Somalia,9
+magnitude_scale_°C,9
+disaster_type_Mass movement (dry),9
+country_Bolivia (Plurinational State of),9
+magnitude_scale_Moment Magnitude,8
+country_Zambia,8
+decade_1920s,7
+country_Cameroon,6
+decade_1910s,6
+country_Tunisia,6
+country_Congo,6
+country_Ecuador,6
+disaster_subtype_Locust infestation,5
+country_Iraq,5
+country_Soviet Union,5
+country_Bahamas,3
+country_Portugal,2
+country_Cabo Verde,2
+decade_1900s,1
+country_Suriname,0
+country_Sweden,0
+country_Oman,0
+country_Norway,0
+country_Northern Mariana Islands,0
+country_Palau,0
+country_Netherlands Antilles,0
+country_New Caledonia,0
+disaster_subtype_Worms infestation,0
+disaster_subtype_Pyroclastic flow,0
+disaster_subtype_Rockfall (wet),0
+disaster_subtype_Rockfall (dry),0
+disaster_subtype_Infestation (General),0
+disaster_subtype_Landslide (dry),0
+country_Brunei Darussalam,0
+country_British Virgin Islands,0
+country_Canary Islands,0
+country_Cayman Islands,0
+country_Belarus,0
+country_Barbados,0
+country_Bermuda,0
+country_Bhutan,0
+disaster_subtype_Lava flow,0
+disaster_subtype_Fog,0
+country_American Samoa,0
+country_Angola,0
+country_Anguilla,0
+disaster_subtype_Storm surge,0
+disaster_subtype_Sudden Subsidence (dry),0
+disaster_subtype_Sudden Subsidence (wet),0
+country_Qatar,0
+country_Lesotho,0
+country_Lebanon,0
+country_Republic of Moldova,0
+country_Saint Barthélemy,0
+country_Réunion,0
+country_People's Democratic Republic of Yemen,0
+country_Niue,0
+country_Armenia,0
+country_Latvia,0
+country_Liechtenstein,0
+country_Libya,0
+country_Luxembourg,0
+country_Lithuania,0
+country_Saint Kitts and Nevis,0
+country_Saint Vincent and the Grenadines,0
+country_Germany Federal Republic,0
+country_Singapore,0
+country_Sierra Leone,0
+country_Slovenia,0
+country_Sint Maarten (Dutch part),0
+country_Seychelles,0
+country_State of Palestine,0
+country_Serbia Montenegro,0
+disaster_subtype_Derecho,0
+country_Turks and Caicos Islands,0
+country_Trinidad and Tobago,0
+country_Turkmenistan,0
+country_Tokelau,0
+country_United Arab Emirates,0
+country_United States Virgin Islands,0
+country_Timor-Leste,0
+country_Wallis and Futuna Islands,0
+country_Tuvalu,0
+country_Kiribati,0
+country_Kuwait,0
+country_Yugoslavia,0
+country_Yemen Arab Republic,0
+country_Senegal,0
+country_Uzbekistan,0
+country_Maldives,0
+country_Sao Tome and Principe,0
+country_Samoa,0
+country_Saint Martin (French Part),0
+country_Montserrat,0
+country_Montenegro,0
+country_Malta,0
+country_Micronesia (Federated States of),0
+country_Marshall Islands,0
+country_Martinique,0
+country_Mayotte,0
+country_Mauritius,0
+disaster_group_Natural,0
+disaster_type_Glacial lake outburst flood,0
+disaster_subtype_Avalanche (dry),0
+disaster_subtype_Animal incident,0
+disaster_subtype_Glacial lake outburst flood,0
+country_Gabon,0
+country_French Polynesia,0
+country_French Guiana,0
+country_Guinea,0
+country_Guyana,0
+country_Guadeloupe,0
+country_Guam,0
+country_Grenada,0
+country_Iceland,0
+disaster_type_Fog,0
+country_Cook Islands,0
+country_Israel,0
+country_Jordan,0
+country_Kazakhstan,0
+country_Hungary,0
+country_Czechoslovakia,0
+country_Cyprus,0
+country_Dominica,0
+country_Equatorial Guinea,0
+country_Estonia,0
+country_Eswatini,0
+country_Finland,0
+country_Denmark,0
+disaster_subtype_Grasshopper infestation,0
+country_Eritrea,0
+country_Antigua and Barbuda,0
+"country_China, Macao Special Administrative Region",0
+disaster_type_Animal incident,0
+disaster_subtype_Volcanic activity (General),0
+country_Azores Islands,0
+country_Azerbaijan,0
