@@ -1,12 +1,12 @@
 # Disaster Severity Prediction using Global Disaster Data
 
-This project builds a machine learning system that predicts the expected severity of natural disaster events using historical global disaster records. The model classifies each event into one of three impact categories:
+This project develops a machine learning system that predicts the expected severity of natural disaster events using historical global disaster records. The model classifies each event into one of three impact categories:
 
 - Low Impact
 - Medium Impact
 - High Impact
 
-The project demonstrates a complete tabular machine learning workflow, including data preprocessing, target variable creation, leakage prevention, feature engineering, model comparison, evaluation, explainability, prediction, deployment, and a Streamlit web interface.
+The project demonstrates a complete tabular machine learning workflow, including data preprocessing, target design, leakage prevention, feature engineering, model comparison, evaluation, explainability, prediction, and deployment through a Streamlit web interface.
 
 ---
 
@@ -16,17 +16,19 @@ The deployed Streamlit web app is available here:
 
 [Open Disaster Severity Prediction App](https://disaster-severity-prediction-2kpp8uxytnndavapv3pyzx.streamlit.app/)
 
+Replace the placeholder link with the deployed Streamlit Community Cloud URL after hosting.
+
 The app allows users to enter disaster details such as country, region, disaster type, year, month, magnitude, and magnitude scale. It then predicts whether the disaster is likely to have Low, Medium, or High Impact.
 
 ---
 
 ## Project Objective
 
-The objective of this project is to answer the question:
+The objective of this project is to answer the following question:
 
 > Given the basic details of a disaster event, can a machine learning model classify its expected impact as low, medium, or high?
 
-The model uses pre-impact information such as country, region, disaster type, year, month, magnitude, and magnitude scale. Final impact values such as deaths, affected population, injuries, homelessness, and economic damage are not used as input features because they directly reveal the outcome.
+The model uses pre-impact information such as country, region, disaster type, year, month, magnitude, and magnitude scale. Final impact values such as deaths, affected population, injuries, homelessness, and economic damage are used only for target construction and are excluded from the training features.
 
 This makes the project practical because it moves beyond descriptive disaster analysis and focuses on prediction and decision support.
 
@@ -34,9 +36,9 @@ This makes the project practical because it moves beyond descriptive disaster an
 
 ## Dataset
 
-The project uses historical disaster event data from the EM-DAT International Disaster Database.
+The project is designed to work with historical disaster event records from the EM-DAT International Disaster Database.
 
-The raw dataset contains information such as:
+The dataset includes information such as:
 
 - Country and region
 - Disaster group, subgroup, type, and subtype
@@ -44,17 +46,19 @@ The raw dataset contains information such as:
 - Magnitude and magnitude scale
 - Deaths, affected population, and economic damage
 
-The raw dataset is not included in this repository because of dataset usage restrictions. To run the full preprocessing pipeline, place your EM-DAT Excel file here:
+The raw EM-DAT export is not distributed with this repository. Users who wish to reproduce the full pipeline should obtain access through the official EM-DAT source and place the exported Excel file at:
 
 ```text
 data/raw/emdat.xlsx
 ```
 
+The repository may include generated artifacts required for demonstration or deployment, such as a processed dataset and trained model files, depending on the deployment setup.
+
 ---
 
 ## Target Variable Design
 
-The dataset does not directly provide a clean severity label, so a custom target variable is created.
+The dataset does not directly provide a single severity label, so a custom target variable is created.
 
 An impact score is calculated using:
 
@@ -62,7 +66,7 @@ An impact score is calculated using:
 impact_score = log1p(total_deaths) + log1p(total_affected) + log1p(total_damage)
 ```
 
-In this EM-DAT export, economic damage is taken from:
+In the EM-DAT export used for this project, economic damage is taken from:
 
 ```text
 total_damage_000_us
@@ -76,18 +80,18 @@ Middle 33%  -> Medium Impact
 Top 33%     -> High Impact
 ```
 
-This creates a balanced multi-class classification problem and avoids manually choosing arbitrary thresholds.
+This creates a balanced multi-class classification problem and avoids manually choosing arbitrary severity thresholds.
 
 ---
 
 ## Data Leakage Prevention
 
-A major part of this project is preventing data leakage.
+A key design decision in this project is to prevent data leakage.
 
-The following columns are used only for target creation and are removed before training:
+The following columns are used only for target creation and are excluded from model training:
 
 - Total deaths
-- Injured
+- Injured population
 - Affected population
 - Homeless population
 - Total affected
@@ -96,7 +100,7 @@ The following columns are used only for target creation and are removed before t
 - Total damage
 - Impact score
 
-This ensures that the model predicts severity from information that could be known before the final disaster impact is fully reported.
+This ensures that the model predicts severity from information that could reasonably be known before the final disaster impact is fully reported.
 
 ---
 
@@ -256,8 +260,6 @@ The deployed version of the app can be accessed here:
 
 [Open Disaster Severity Prediction App](https://disaster-severity-prediction-2kpp8uxytnndavapv3pyzx.streamlit.app/)
 
-> Replace the placeholder link with your actual deployed Streamlit URL.
-
 ---
 
 ## Sample Prediction Output
@@ -335,9 +337,9 @@ pip install -r requirements.txt
 
 ## Running the Full Pipeline
 
-### 1. Add the raw dataset
+### 1. Prepare the dataset
 
-Place the EM-DAT Excel file here:
+Obtain the EM-DAT disaster event export from the official source and place it at:
 
 ```text
 data/raw/emdat.xlsx
@@ -411,21 +413,29 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## Important Deployment Fix
+## License
 
-The saved model depends on the same package versions used during training. If the deployed app uses a different version of Python or scikit-learn, it may fail with an error such as:
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+The license applies to the source code, documentation, and original project files created for this repository. Dataset rights and usage remain governed by the respective data provider terms.
+
+---
+
+## EM-DAT Dataset Usage and Attribution
+
+This project is designed to work with disaster event data obtained from the EM-DAT International Disaster Database.
+
+EM-DAT is maintained by the Centre for Research on the Epidemiology of Disasters (CRED), UCLouvain, Brussels, Belgium. Dataset access, citation, redistribution, and usage are governed by EM-DAT's official terms and policies.
+
+Suggested citation:
 
 ```text
-AttributeError: 'SimpleImputer' object has no attribute '_fill_dtype'
+Emergency Events Database (EM-DAT), Centre for Research on the Epidemiology of Disasters (CRED), UCLouvain, Brussels, Belgium. Accessed 2026. https://www.emdat.be/
 ```
 
-To avoid this, the project uses pinned dependencies.
+For academic reports, publications, or public releases, users should refer to the latest official EM-DAT citation guidance.
 
-The `runtime.txt` file should contain:
-
-```text
-python-3.10
-```
+---
 
 ## Key Skills Demonstrated
 
